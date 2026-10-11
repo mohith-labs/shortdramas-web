@@ -28,7 +28,7 @@ const initialState: AppState = {
   coins: 999999,
   isLoggedIn: true,
   username: "Premium User",
-  avatar: "https://ui-avatars.com/api/?name=VIP&background=e50914&color=fff",
+  avatar: "https://ui-avatars.com/api/?name=VIP&background=dc2626&color=fff&bold=true",
 };
 
 function reducer(state: AppState, action: Action): AppState {
@@ -65,7 +65,12 @@ function reducer(state: AppState, action: Action): AppState {
     case "SPEND_COINS":
       return { ...state, coins: Math.max(0, state.coins - action.amount) };
     case "LOGIN":
-      return { ...state, isLoggedIn: true, username: "Drama_Fan", avatar: "https://ui-avatars.com/api/?name=DF&background=e50914&color=fff" };
+      return {
+        ...state,
+        isLoggedIn: true,
+        username: "Premium User",
+        avatar: "https://ui-avatars.com/api/?name=VIP&background=dc2626&color=fff&bold=true",
+      };
     case "LOGOUT":
       return { ...state, isLoggedIn: false, username: "Guest", avatar: "" };
     default:

@@ -14,10 +14,10 @@ export function HorizontalSection({
   size?: "normal" | "large";
 }) {
   return (
-    <section className="mb-6">
-      <div className="flex items-center justify-between px-4 mb-2.5">
-        <h2 className="text-base font-bold">{title}</h2>
-        <button className="flex items-center gap-0.5 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)] transition-colors">
+    <section className="mb-7">
+      <div className="flex items-center justify-between px-4 mb-3">
+        <h2 className="text-[15px] font-bold tracking-tight">{title}</h2>
+        <button className="flex items-center gap-0.5 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)] transition-colors min-h-[44px] pl-2">
           More <ChevronRight size={14} />
         </button>
       </div>

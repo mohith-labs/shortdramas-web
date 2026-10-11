@@ -27,7 +27,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="min-h-full bg-[var(--color-bg-primary)]">
         <AppProvider>
-          {/* Dark side panels on desktop */}
           <div className="min-h-dvh bg-black/40">
             <div className="mobile-shell bg-[var(--color-bg-primary)] shadow-2xl shadow-black/50">
               <main className="pb-16 page-transition">{children}</main>
